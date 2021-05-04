@@ -41,7 +41,7 @@
     // get r15
     $queryr15 = $conn->query("SELECT channel, rhsht, rh, co2, ta, tg, ws, li FROM actual WHERE channel = 10");
     if (!$queryr15) {
-        echo "An error occurred fetch r33.\n";
+        echo "An error occurred fetch r15.\n";
         exit;
     }else{
         $rowr15 = $queryr15->fetch_assoc();
@@ -50,11 +50,3 @@
         $_ws15 = number_format($rowr15["ws"], 2, '.', '');
     }
 ?>
-
-
-<script>
-    // set every 300 mili seconds
-    setInterval(function() {
-        window.location.reload();
-    }, 300000);  
-</script>
