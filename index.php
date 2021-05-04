@@ -280,7 +280,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
-        <!-- set style for all card -->
+        <!-- set style size for all card -->
         <script>
             myElements = document.querySelectorAll(".whole-card");
 
@@ -290,6 +290,7 @@
                 }
         </script>
         
+        <!-- Card Slideshow Script -->
         <script>
         $(function() {
 
@@ -312,9 +313,18 @@
             });
         </script>
         
+        <!-- All Card Color Styles -->
         <script>
             $(".card-header").css("background-color", "#ecfeed");
             $(".card-body").css("background-color", "black").css("color", "green").css("font-size", "55px");
+        </script>
+
+        <!-- Auto reload pages-->
+        <script>
+            // set every 300 mili seconds
+            setInterval(function() {
+                window.location.reload();
+            }, 300000);  
         </script>
     </body>
 </html>
